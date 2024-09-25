@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#photo #pic1 div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 20px;
+}
+#photo #pic2 div{
+    width: 400px;
+    height: 480px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: 20px;
+}
+#photo #pic1 div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+
+}
+#photo #pic2 div img{
+    width: 400px;
+    height: 480px;
+    border-radius: 5px;
+}
