@@ -1,0 +1,19 @@
+body{
+    border: 2px solid black;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 2px 0 green;
+}
