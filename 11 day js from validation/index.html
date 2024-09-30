@@ -7,22 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <from class="input1">
+    <form>
 
         <div id="errorname"></div>
-        <input type="text" placeholder="Enter name" id="name"><br>
-        <div id="errorname1"></div>
-        <input type="text" placeholder="Enter mobie number" id="number"><br>
-        <div id="errorname2"></div>
-        <input type="text" placeholder="Enter email" id="email"><br>
-        <div id="errorname3"></div>
-        <input type="text" placeholder="Enter password" id="pass"><br>
-        <div id="errorname4"></div>
-        <input type="text" placeholder="Enter confirm Password"  id="confirm"><br>
-        <div id="errorname5"></div>
-        <input type="text" placeholder="Enter reset password" id="reset"><br>
+        <input type="text" placeholder="Enter name" id="name" onblur="a();"><br>
+
+
+        <div id="errornumber"></div>
+        <input type="text" placeholder="Enter mobie number" id="number" onblur="b();"><br>
+
+
+        <div id="erroremail"></div>
+        <input type="text" placeholder="Enter email" id="email" onblur="c();"><br>
+
+
+        <div id="errorpassword"></div>
+        <input type="text" placeholder="Enter password" id="pass" onblur="d();"><br>
+
+
+        <div id="errorconfirm"></div>
+        <input type="text" placeholder="Enter confirm Password"  id="confirm" onblur="e();"><br>
+
+
+        <div id="errorreset"></div>
+        <input type="text" placeholder="Enter reset password" id="reset" onblur="f();"><br>
+
+
         <button onclick="return registraction();">Submit</button>
-    </from>
+    </form>
     <script src="index.js"></script>
 </body>
 </html>
