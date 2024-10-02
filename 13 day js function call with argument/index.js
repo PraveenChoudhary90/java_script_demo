@@ -21,12 +21,35 @@ function data(){
     name1.style.outlineColor = "pink";
     return false;
    }
+   else if(!(email.includes('@') && (email.includes('.com')))){
+    document.querySelector('#email1').innerHTML = "please enter your valid email with @";
+    let selectname = document.querySelector('#email');
+    selectname.style.borderColor = "red";
+    selectname.style.outlineColor = "red";
+    return false;
+    
+   }
    if(number === ""){
     document.querySelector('#number1').innerHTML = "Please Enter your number";
     let name1 = document.querySelector('#number');
     name1.style.borderColor = "pink";
     name1.style.outlineColor = "pink";
     return false;
+   }
+   else if(number.length !== 10){
+    document.querySelector('#number1').innerHTML = "enter mobile number shoud be in 10 digit";
+    let name1 = document.querySelector('#number');
+    name1.style.borderColor = "pink";
+    name1.style.outlineColor = "pink";
+    return false;
+   }
+   else if(isNaN(number)){
+     document.querySelector('#number1').innerHTML = "enter mobile number shoud be in 10 digit only integer";
+    let name1 = document.querySelector('#number');
+    name1.style.borderColor = "pink";
+    name1.style.outlineColor = "pink";
+    return false;
+
    }
    if(age === ""){
     document.querySelector('#age1').innerHTML = "Please Enter your age";
