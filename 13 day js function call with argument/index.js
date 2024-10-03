@@ -65,6 +65,33 @@ function data(){
     name1.style.outlineColor = "pink";
     return false;
    }
+   if(!
+    (
+     psw.match(/[1234567890]/)
+     && 
+     psw.match(/[qwertyuipasdfghjklzxcvbnmo]/) 
+     && 
+     psw.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/)
+     && 
+     psw.match(/[!@#$%^&*(){}|?><]/)
+    )
+) {
+    document.querySelector('#psw3').innerHTML = "Please contain  ateast 1 lower case , upper case and storng pasword";
+    let name1 = document.querySelector('#psw');
+    name1.style.borderColor = "pink";
+    name1.style.outlineColor = "pink";
+    return false;
+
+   }
+   if(psw !== psw1){
+    window.alert("Password and confirm password not match");
+    document.querySelector("#psw1").value = "";
+    document.querySelector("#psw").value = "";
+    document.querySelector("#psw").focus();
+    return false;
+
+
+   }
    if(psw1 === ""){
     document.querySelector('#psw3').innerHTML = "Please Enter your Re -Enter password";
     let name1 = document.querySelector('#psw1');
