@@ -1,0 +1,13 @@
+let str = "this is our java script class";
+console.log(str);
+console.log(str[0]);
+console.log(str.length);
+console.log(str.replace(" ",""));
+console.log(str.replaceAll(" ",""));
+console.log(str.includes("sj"));
+console.log(str.includes("java"));
+console.log(str.slice(3,9));
+console.log(str.slice(11, str.length));
+console.log(str.padEnd());
+console.log(str.trim());
+console.log(str.split());
