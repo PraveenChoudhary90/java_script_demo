@@ -14,6 +14,9 @@ let document1 = {
   querySlector: function () {
     console.log("hello");
   },
-  getElementById: function () {},
+  getElementById: function () {
+    console.log("praveen");
+  },
 };
 document1.querySlector();
+document1.getElementById();
