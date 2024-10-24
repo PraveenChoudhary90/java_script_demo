@@ -3,13 +3,13 @@ let store = '';//7+7+9+0+78 -------------->98 -->99
 function cal(arg){
     console.log(arg)
     store = store + arg
-    let selecttd = document.querySelector('#show');
-    selecttd.innerHTML = store
+    let selectted = document.querySelector('#show');
+    selectted.innerHTML = store
 }
 
 function calculate(){
-    let selecttd = document.querySelector('#show');
-    selecttd.innerHTML = eval(store) //98 //4
+    let selectted = document.querySelector('#show');
+    selectted.innerHTML = eval(store) //98 //4
     store = eval(store) //----------->4
     store.toString();//   '98' + 1
 }
