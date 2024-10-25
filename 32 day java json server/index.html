@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #upform{
+            position: absolute;
+            top: 200px;
+            left: 500px;
+            background-color: coral;
+            padding: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body onload="run();">
+    <form id="upform">
+        <input type="text" placeholder="Please Enter your imageurl" id="imgurl"><br>
+        <input type="text" placeholder="Please Enter your product name" id="pname"><br>
+        <input type="text" placeholder="Please Enter your brand name" id="bname"><br>
+        <input type="text" placeholder="Please Enter your product price" id="pprice"><br>
+        <button onclick="finalupdate()">update</button>
+    </form>
+    <table id="show" align="center" border="2px" width = "600px"></table>
+    <script src="index.js"></script>
+</body>
+</html>
