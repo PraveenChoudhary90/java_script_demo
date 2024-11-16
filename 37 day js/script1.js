@@ -1,6 +1,7 @@
 import sum from './add.js';
 
-import {a,b} from './nameexport.js';
+import {a} from './nameexport.js';
+import { b } from './nameexport.js';
 
 console.log(sum(10,20));
 
