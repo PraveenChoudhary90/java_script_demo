@@ -1,0 +1,16 @@
+{
+    "studens":[
+        {
+            "name":"praveen",
+            "age":22,
+            "course":"mern stack",
+            "address":"bhopal"
+        },
+          {
+            "name":"lucky",
+            "age":24,
+            "course":" stano",
+            "address":"Seoni"
+        }
+    ]
+}
