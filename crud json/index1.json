@@ -1,0 +1,27 @@
+{
+    "students":[{
+        "name":"praveen",
+        "age":22,
+        "course":"mern",
+        "add":"bhopal"
+    },
+    {
+        "name":"lucky",
+        "age":24,
+        "course":"stono",
+        "add":"seoni"
+    },
+    {
+        "name":"rohit",
+        "age":23,
+        "course":"python",
+        "add":"indore"
+    },
+    {
+        "name":"vishal",
+        "age":25,
+        "course":"da",
+        "add":"bhopal"
+    }
+]
+}
