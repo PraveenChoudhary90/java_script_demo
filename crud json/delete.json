@@ -1,0 +1,11 @@
+{
+  "students": [
+    {
+      "name": "praveen",
+      "age": 22,
+      "city": "bhopal",
+      "course": "mern",
+      "id": "cae3"
+    }
+  ]
+}
