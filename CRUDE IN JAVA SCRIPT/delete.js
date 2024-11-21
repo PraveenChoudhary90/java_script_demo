@@ -19,7 +19,7 @@ async function fet()
 fet();
  function deletedata(id){
 
-let deletefinal = fetch(`http://localhost:3000/students/${id}`,{
+fetch(`http://localhost:3000/students/${id}`,{
     method:'DELETE'
 })
 .then(re=>alert("data is sucessfully deleted"));
