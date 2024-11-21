@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "name": "praveen",
+      "age": 33,
+      "address": "bhopal",
+      "id": "2439"
+    },
+    {
+      "id": "fc22",
+      "name": "PraveenChoudhary",
+      "age": "123",
+      "address": "indore"
+    }
+  ]
+}
