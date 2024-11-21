@@ -11,6 +11,7 @@
     <th>${e.course}</th>
     <th>${e.city}</th>
      <td><button onclick="deletedata('${e.id}')">Delete</button></td>
+     <td><button onclick="myedit('${e.id}')">update</button></td>
     </tr>
     `).join(" ");
     document.querySelector("#showdata").innerHTML = final_data;
@@ -46,4 +47,27 @@ function insertdata()
 
     })
     .then(res=>alert("Inserted...!!!!!!"))
+}
+
+//updata
+
+async function myedit(id)
+{
+    let upmydata = await fetch("http://localhost:3000/students")
+    let redata = await upmydata.json();
+    let senddata = `
+<input type="text" value="${redata.id}" readonly> <br>
+<input type="text" value="${redata.name}" id="name1"> <br>
+<input type="text" value="${redata.age}" id="age1"> <br>
+<input type="text" value="${redata.city}" id="city1"> <br>
+<input type="text" value="${redata.course}" id="course1"> <br>
+<input type="submit">
+`
+document.querySelector("#edittable").innerHTML = senddata;
+
+//  let updatedata = fetch(`http://localhost:3000/students/${id}`,{
+//      method:'PUT',
+//     body:JSON.stringify(updatedata)
+// })
+    
 }
