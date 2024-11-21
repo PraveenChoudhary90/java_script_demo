@@ -6,6 +6,20 @@
       "city": "bhopal",
       "course": "mern",
       "id": "cae3"
+    },
+    {
+      "id": "1159",
+      "name": "qa",
+      "age": "12",
+      "city": "sd",
+      "course": "we"
+    },
+    {
+      "id": "2839",
+      "name": "rohit",
+      "age": "90",
+      "city": "pune",
+      "course": "python"
     }
   ]
 }

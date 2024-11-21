@@ -24,3 +24,26 @@ fetch(`http://localhost:3000/students/${id}`,{
 })
 .then(hello=>window.alert("delete Succesfully...!!!!!"));
 }
+
+
+
+
+function insertdata()
+{
+    let data = {
+        name:document.querySelector("#name").value,
+        age:document.querySelector("#age").value,
+        city:document.querySelector("#city").value,
+        course:document.querySelector("#course").value
+    }
+
+    fetch("http://localhost:3000/students",{
+        method:'POST',
+        headers:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify(data)
+
+    })
+    .then(res=>alert("Inserted...!!!!!!"))
+}
