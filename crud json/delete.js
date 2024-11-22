@@ -53,7 +53,7 @@ function insertdata()
 
 async function myedit(id)
 {
-    let upmydata = await fetch("http://localhost:3000/students")
+    let upmydata = await fetch(`http://localhost:3000/students/${id}`);
     let redata = await upmydata.json();
     let senddata = `
 <input type="text" value="${redata.id}" readonly> <br>
@@ -61,13 +61,25 @@ async function myedit(id)
 <input type="text" value="${redata.age}" id="age1"> <br>
 <input type="text" value="${redata.city}" id="city1"> <br>
 <input type="text" value="${redata.course}" id="course1"> <br>
-<input type="submit">
+<input type="submit" onclick = "finalupdate('${redata.id}')">
 `
 document.querySelector("#edittable").innerHTML = senddata;
 
-//  let updatedata = fetch(`http://localhost:3000/students/${id}`,{
-//      method:'PUT',
-//     body:JSON.stringify(updatedata)
-// })
     
+}
+function finalupdate(id){
+    let fdata = {
+        name:document.querySelector("#name1").value,
+        age:document.querySelector("#age1").value,
+        city:document.querySelector("#city1").value,
+        course:document.querySelector("#course1").value
+    }
+    fetch(`http://localhost:3000/students/${id}`,{
+        method:'PUT',
+        headers:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify("fdata"),
+    })
+    .then(re=>alert("update sucessfully...!!!!!"))
 }
