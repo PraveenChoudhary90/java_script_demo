@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "name": "praveen",
+      "age": 22,
+      "address": "bhopal",
+      "id": "eae6"
+    },
+    {
+      "name": "vicky",
+      "age": "25",
+      "address": "gopalganj",
+      "id": "d87c"
+    },
+    {
+      "id": "3886",
+      "name": "praveen",
+      "age": "22",
+      "address": "indore"
+    }
+  ]
+}
